@@ -6,3 +6,7 @@ body{
 .contact-section{
   background: #fff;
 }
+
+.contact-first-row{
+  padding-bottom: 10px;
+}
