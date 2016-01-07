@@ -28,6 +28,11 @@ var addButton = $('.add-media');
 $(addButton).click(function(){
   $("li").click(function(){
     console.log('button clicked!');
-    $(mediaWrapper).append("<div class='input-group'><span class='input-group-addon' id='basic-addon1'><i class='fa fa-linkedin-square'></i></span><input type='text' class='form-control' placeholder='Username' aria-describedby='basic-addon1'></div>");
+    $(mediaWrapper).append("<div class='input-group'><span class='input-group-addon' id='basic-addon1'><i class='fa fa-linkedin-square'></i></span><input type='text' class='form-control' placeholder='Username' aria-describedby='basic-addon1'><a href='#' class='remove-media-input'>X</a></div>");
   });
+});
+
+$(mediaWrapper).on("click", ".remove-media-input", function(e){
+  e.preventDefault();
+  $(this).parent('div').remove();
 });
