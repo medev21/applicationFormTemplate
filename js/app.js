@@ -17,10 +17,16 @@
 //     })
 // });
 
+// <div class="input-group">
+//   <span class="input-group-addon" id="basic-addon1">@</span>
+//   <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+// </div>
+
 var mediaWrapper = $('.media-fields');
 var addButton = $('.add-media');
 
 $(addButton).click(function(){
   console.log('button clicked!');
-  $(mediaWrapper).append('<div><input type="text" value="hi"></div>')
+  $(mediaWrapper).append("<div class='input-group'><span class='input-group-addon' id='basic-addon1'>@</span><input type='text' class='form-control' placeholder='Username' aria-describedby='basic-addon1'></div>"
+  );
 });
