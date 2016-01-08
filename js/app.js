@@ -13,6 +13,7 @@ $(addButton).click(function(event){
         break;
       case 'github-link':
         console.log('github cliked');
+        $(mediaWrapper).append("<div class='input-group'><span class='input-group-addon' id='basic-addon1'><i class='fa fa-github-square'></i></span><input type='text' class='form-control' placeholder='Username' aria-describedby='basic-addon1'><a href='#' class='remove-media-input'>X</a></div>");
         break;
       default:
         console.log('default clicked');
