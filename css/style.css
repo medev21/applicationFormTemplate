@@ -3,6 +3,11 @@ body{
   background: #e9eaec;
 }
 
+.container{
+  /*margin-bottom: 20px;*/
+  margin-bottom: 2%;
+}
+
 .contact-section{
   background: #fff;
 }
